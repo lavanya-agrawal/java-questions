@@ -1,0 +1,10 @@
+Sum of last digits of 2 no.
+
+
+         class UserMainCode{
+           public int addLastDigitOf(int input1){
+              input1 = Math.abs(input1);
+               input1 = Math.abs(input1);
+                 return(input1%10+input2%10);
+                   }
+              }

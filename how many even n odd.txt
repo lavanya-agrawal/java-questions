@@ -1,0 +1,20 @@
+how many even n odd?
+
+class UserMainCode{
+           public int countEvensOdds(int input1, int input2, int input3, int input4, int input5, String input6){
+        int ecount=0;
+        int ocount=0;
+        if(input1%2==0) ecount++;
+        else ocount++;
+        if(input2%2==0) ecount++;
+        else ocount++;
+        if(input3%2==0) ecount++;
+        else ocount++;
+        if(input4%2==0) ecount++;
+        else ocount++;
+        if(input5%2==0) ecount++;
+        else ocount++;
+        if(input6.equals("even")) return ecount;
+        else return ocount;             
+	}
+}

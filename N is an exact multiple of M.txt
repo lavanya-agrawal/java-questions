@@ -1,0 +1,16 @@
+N is an exact multiple of M
+
+ class UserMainCode{
+           public int isMultiple(int input1, int input2){
+              input2 = Math.abs(input2);
+               if(input1==0 || input2==0){
+            return 3;
+        }
+        if(input1%input2==0){
+            return 2;
+        }
+        else{
+            return 1;
+           }
+	}
+}

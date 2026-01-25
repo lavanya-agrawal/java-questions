@@ -1,0 +1,14 @@
+All digit count
+
+                       
+            class UserMainCode{
+            public int countPrimesInRange(int input1){
+                    int count=0;
+
+        for(int i=input1;i>0;i=i/10){
+            count++;
+        }
+        return count;
+            }
+        }
+

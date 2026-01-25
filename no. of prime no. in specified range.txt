@@ -1,0 +1,21 @@
+no. of prime no. in specified range
+
+
+
+            class UserMainCode{
+            public int countPrimesInRange(int input1){
+                    int num=0;
+        for(int i=input1;i<=input2;i++){
+             boolean isPrime=true;
+             if(i<2) isPrime=false;
+            for(int j=2;j*j<=i;j++){
+                if(i%j==0){
+                    isPrime=false;
+                    break;
+                }
+            }
+            if(isPrime) num++;
+        }
+        return num;
+            }
+        }

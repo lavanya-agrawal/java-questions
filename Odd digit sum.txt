@@ -1,0 +1,13 @@
+Odd digit sum
+  class UserMainCode{
+            public int OddDigitsSum(int input1){
+              int count =0;
+        while(input1>0){
+            if(input1%2!=0){
+                count+=input1%10;
+            }
+            input1/=10;
+        }
+        return count;
+            }
+        }

@@ -1,0 +1,9 @@
+Second word uppercase
+ class UserMainCode{
+               public long secondWordUpperCase(int input1){
+               
+   String [] words = input1.split("\\s+");
+    if(words.length<2) return "LESS";
+    return (words[1].toUpperCase());
+	}
+}

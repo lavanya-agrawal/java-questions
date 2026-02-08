@@ -1,0 +1,36 @@
+create pin using 3 given inputs
+class UserMainCode{
+               public int createPIN(int input1, int input2, int input3){
+               
+    int a = input1;
+    int b= input2;
+    int c =input3;
+
+    int au=a%10,at=(a/10)%10,ah=a/100;
+    int bu=b%10,bt=(b/10)%10,bh=b/100;
+    int cu=c%10,ct=(c/10)%10,ch=c/100;
+
+    int u =au;
+    if(bu<u) u=bu;
+    if(cu<u) u=cu;
+
+     int t =at;
+    if(bt<t) t=bt;
+    if(ct<t) t=ct;
+
+     int h =ah;
+    if(bh<h) h=bh;
+    if(ch<h) h=ch;
+
+    int m= au;
+    if(at>m) m=at;
+    if(ah>m) m=ah;
+    if(bu>m) m=bu;
+    if(bt>m) m=bt;
+    if(bh>m) m=bh;
+    if(cu>m) m=cu;
+    if(ct>m) m=ct;
+    if(ch>m) m=ch;
+    return (m*1000+h*100+t*10+u);
+  	}
+}

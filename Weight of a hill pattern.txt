@@ -1,0 +1,18 @@
+Weight of a hill pattern
+ class UserMainCode{
+               public int totalHillWeight(int input1, int input2, int input3){
+             
+        int total = 0;
+        int levels = input1;
+        int headWeight = input2;
+        int inc = input3;
+
+        for (int i = 1; i <= levels; i++) {
+            int w = headWeight + (i - 1) * inc;
+            int stars = i;
+            total += stars * w;
+        }
+
+        return total;
+ 	}
+}
